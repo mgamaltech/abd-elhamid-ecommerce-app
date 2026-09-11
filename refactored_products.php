@@ -42,6 +42,6 @@ $availableProducts = filterAvailableProducts($products);
 $sortedProducts = sortProductsByPrice($availableProducts);
 
 echo "The available products in stock are: ";
-    foreach ($products as $product) {
+    foreach ($sortedProducts as $product) {
         echo $product["name"] . " - " . $product["price"] . "\n";
     }
