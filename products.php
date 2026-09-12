@@ -9,24 +9,29 @@ $products = [
 ];
 
 $available_in_stock = [];
-foreach ($products as $product => $value) {
+foreach ($products as $product) {
 
-    if($value["in_stock"] == true)
-    {
-        $available_in_stock[] = $value;
+    if ($product["in_stock"] == true) {
+        $available_in_stock[] = $product;
+
 
     }
+}
+
+    uasort($available_in_stock, function ($a, $b) {
+        return $a["price"] <=> $b["price"];
+    });
+
+    echo "The available products in stock are: ";
+
+    foreach ($available_in_stock as $product) {
+        echo $product["name"] . " - " . $product["price"] . "\n";
+
 
 }
 
 // var_dump($available_in_stock);
 
-uasort($products, function ($a, $b) {
-    return $a["price"] <=> $b["price"];
-});
-echo "The available products in stock are: ";
-foreach ($products as $product) {
-    echo $product["name"] . " - " . $product["price"] . "\n";
-}
+
 
 // var_dump($products);
