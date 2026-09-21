@@ -145,4 +145,4 @@ It applies a percentage-based discount to a total value.
 
 * Easiest one : product class responsibility
 * hardest one : cart class responsibility
-* changes : I think the changes will depend on your review
+* changes : The reason there were no changes is beccause I took a lot of time in careful planning and modified the code a lot on my local machine so I when I reviewed I found no modifications to be made on my end
