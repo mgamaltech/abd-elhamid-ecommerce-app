@@ -2,6 +2,8 @@
 
 namespace App;
 
+use InvalidArgumentException;
+
 class PercentageDiscount implements DiscountStrategy
 {
     private float $percentage;
