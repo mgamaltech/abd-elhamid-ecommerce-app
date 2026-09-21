@@ -139,3 +139,10 @@ It applies a percentage-based discount to a total value.
 | `DiscountStrategy`   | Defines the discount contract               | None                     |
 | `NoDiscount`         | Applies no discount                         | None                     |
 | `PercentageDiscount` | Applies a percentage discount               | Percentage               |
+
+
+## Easiest and hardest responsibilities to place
+
+* Easiest one : product class responsibility
+* hardest one : cart class responsibility
+* changes : I think the changes will depend on your review
